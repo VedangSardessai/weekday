@@ -5,6 +5,7 @@ import WelcomeUser from "./welcome_banner/WelcomeUser";
 import { ReduxProvider } from "./redux/provider";
 import InfoBanner from "./info_banner/InfoBanner";
 import Jobs from "./job_card/Jobs";
+import Filter from "./filter/Filter";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <WelcomeUser />
           <div className="content">
             <InfoBanner />
+            <Filter />
             <Jobs />
           </div>
           <RightSideBar />
