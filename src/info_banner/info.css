@@ -1,0 +1,25 @@
+.infobanner-container {
+  min-height: 30px;
+  margin-top: 130px;
+  padding: 0 10px 0 10px;
+  margin-right: 130px;
+  margin-bottom: 25px;
+  background-color: rgb(217, 254, 211);
+  max-width: fit-content;
+  min-width: 300px;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+}
+
+.info-para {
+  padding: 5px;
+}
+
+.info-link {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid lightblue;
+}
