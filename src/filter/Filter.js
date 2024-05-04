@@ -8,6 +8,7 @@ import Experience from "./experience/Experience";
 import WorkMode from "./work/WorkMode";
 import BaseSalary from "./base_salary/BaseSalary";
 import SearchBar from "./search/SearchBar";
+import TechStack from "./tech_stack/TechStack";
 
 export default function Filter() {
   const [minimumBasePay, setminimumBasePay] = useState(null);
@@ -60,6 +61,11 @@ export default function Filter() {
         />
 
         <WorkMode
+          customStyles={customStyles}
+          formatOptionLabel={formatOptionLabel}
+        />
+
+        <TechStack
           customStyles={customStyles}
           formatOptionLabel={formatOptionLabel}
         />
