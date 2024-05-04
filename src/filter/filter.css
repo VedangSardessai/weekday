@@ -1,0 +1,73 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-color: transparent;
+  padding: 0 200px 20px 20px;
+}
+
+@media screen and (max-width: 680px) {
+  .header-container {
+    flex-direction: column; /* Switch to single column layout */
+    align-items: flex-start; /* Center items in single column */
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 980px) {
+  .header-container {
+    flex-wrap: wrap;
+    max-height: 200px;
+  }
+}
+
+.input-container {
+  width: 100%; /* Ensure each input container takes full width */
+}
+
+.select-input {
+  width: 100%; /* Ensure select inputs take full width */
+}
+
+.apply-search {
+  display: flex;
+  justify-content: center;
+}
+
+.apply-span,
+.search-span {
+  font-size: large;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.apply-span {
+  margin-right: 20px;
+}
+
+.search-span {
+  padding-left: 5px;
+  margin-left: 20px;
+  border-bottom: 1px solid blue;
+}
+
+.search-input {
+  color: gray;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: lighter;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-input:focus {
+  outline: 0px;
+}
+
+.roles-input {
+  min-width: 150px;
+}
