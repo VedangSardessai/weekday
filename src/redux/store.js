@@ -5,6 +5,7 @@ import experienceReducer from "./slices/experience-slice";
 import workReducer from "./slices/work-slice";
 import salaryReducer from "./slices/salary-slice";
 import searchReducer from "./slices/search-slice";
+import techReducer from "./slices/tech-slice";
 
 export const store = configureStore({
   reducer: {
@@ -14,5 +15,6 @@ export const store = configureStore({
     work: workReducer,
     salary: salaryReducer,
     search: searchReducer,
+    tech: techReducer,
   },
 });

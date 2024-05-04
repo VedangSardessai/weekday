@@ -4,7 +4,7 @@ const initialState = {
   selectedWorkMode: [],
 };
 
-const employeeSlice = createSlice({
+const workSlice = createSlice({
   name: "work",
   initialState,
   reducers: {
@@ -27,5 +27,5 @@ export const {
   addWorkMode,
   removeWorkMode,
   clearWorkMode,
-} = employeeSlice.actions;
-export default employeeSlice.reducer;
+} = workSlice.actions;
+export default workSlice.reducer;
