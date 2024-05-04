@@ -1,0 +1,32 @@
+.welcome-container {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  padding: 10px 30px;
+  width: calc(100% - 250px);
+  height: 60px;
+  z-index: 18;
+  margin-left: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.welcome-para {
+  font-size: x-large;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.chat-button {
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  right: 160px;
+  background: rgb(85, 239, 196);
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+}
