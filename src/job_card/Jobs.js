@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./jobs.css";
+import { motion } from "framer-motion";
 
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
@@ -39,7 +40,7 @@ export default function Jobs() {
     <div className="jobs-container">
       {jobs.map((job, index) => {
         return (
-          <div
+          <motion.div
             whileHover={{ scale: 1.01 }}
             key={job.jdUid + index}
             className="job-card"
@@ -153,7 +154,7 @@ export default function Jobs() {
             >
               ⚡ Easy Apply
             </button>
-          </div>
+          </motion.div>
         );
       })}
     </div>
