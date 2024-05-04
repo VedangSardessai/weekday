@@ -4,6 +4,7 @@ import RightSideBar from "./right_sidebar/RightSidebar";
 import WelcomeUser from "./welcome_banner/WelcomeUser";
 import { ReduxProvider } from "./redux/provider";
 import InfoBanner from "./info_banner/InfoBanner";
+import Jobs from "./job_card/Jobs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <WelcomeUser />
           <div className="content">
             <InfoBanner />
+            <Jobs />
           </div>
           <RightSideBar />
         </div>

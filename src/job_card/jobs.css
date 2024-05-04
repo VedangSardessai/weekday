@@ -1,0 +1,135 @@
+
+.jobs-container {
+  display: grid;
+  align-items: center;
+  place-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* One column by default */
+  gap: 10px 6px; /* Gap between rows and columns */
+  margin-top: 10px;
+  margin-right: 4px;
+  max-width: fit-content;
+}
+
+.company-role-location {
+  display: flex;
+  align-items: center;
+}
+
+.left-span {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.right-span {
+  text-transform: capitalize;
+  flex: 1; /* Allow the right span to take up remaining space */
+}
+
+@media screen and (min-width: 1077px) {
+  .jobs-container {
+    grid-template-columns: repeat(
+      2,
+      minmax(0, 1fr)
+    ); /* Two columns for small screens */
+  }
+}
+
+@media screen and (min-width: 1484px) {
+  .jobs-container {
+    grid-template-columns: repeat(
+      3,
+      minmax(0, 1fr)
+    ); /* Three columns for large screens */
+    gap: 10px 8px; /* Increase gap for larger screens */
+  }
+}
+
+.job-card {
+  min-width: fit-content;
+  /* min-height: 650px; */
+  padding: 45px;
+  margin: 20px 15px 15px 10px;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid rgb(217, 217, 217);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.01);
+}
+
+.job-role {
+  text-transform: capitalize;
+  font-size: large;
+}
+
+.job-details {
+  max-width: 300px;
+  font-size: 14px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.easy-apply {
+  width: 100%;
+  background-color: rgb(85, 239, 196);
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+  padding: 15px 18px;
+  border: none;
+  font-size: large;
+  border-radius: 8px;
+}
+
+.estimate-salary-para {
+  color: gray;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.view-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -35px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.view-more {
+  font-size: small;
+  cursor: pointer;
+  color: #4943da;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.fade {
+  position: relative;
+  bottom: 220px;
+  display: block;
+  width: 300px;
+  height: 95px;
+  filter: blur(20);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.9) 100%
+  );
+}
+
+.posted-ago {
+  width: fit-content;
+  padding: 4px 6px;
+  box-shadow: rgba(6, 6, 6, 0.05) 0px 2px 6px 0px;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
+  margin-bottom: 4px;
+}
+
+.posted-para {
+  font-size: 13px;
+  color:gray;
+  position: relative;
+  width: fit-content;
+  margin: -5px;
+  padding: 4px;
+}
