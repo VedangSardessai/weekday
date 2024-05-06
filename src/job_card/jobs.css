@@ -1,8 +1,8 @@
-
 .jobs-container {
   display: grid;
   align-items: center;
   place-items: center;
+  margin-left: 15px;
   grid-template-columns: repeat(1, minmax(0, 1fr)); /* One column by default */
   gap: 10px 6px; /* Gap between rows and columns */
   margin-top: 10px;
@@ -127,7 +127,7 @@
 
 .posted-para {
   font-size: 13px;
-  color:gray;
+  color: gray;
   position: relative;
   width: fit-content;
   margin: -5px;

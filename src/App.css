@@ -2,5 +2,6 @@
   display: flex;
 }
 .content {
-  margin-left: 150px;
+  margin-left: 90px;
+  max-width: calc(100% - 180px);
 }
