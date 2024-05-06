@@ -1,0 +1,13 @@
+.more-info-parent {
+  z-index: 21;
+  position: fixed;
+  top: 100px;
+  left: 25%;
+  height: 80%;
+  width: 50%;
+  background-color: white;
+  margin-left: 15px;
+  border-radius: 20px;
+  overflow-y: scroll;
+  padding: 25px;
+}
