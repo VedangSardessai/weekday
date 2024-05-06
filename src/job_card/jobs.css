@@ -133,3 +133,14 @@
   margin: -5px;
   padding: 4px;
 }
+
+.gray-div {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .25;
+  background-color: gray;
+}

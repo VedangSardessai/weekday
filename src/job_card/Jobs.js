@@ -4,12 +4,16 @@ import "./jobs.css";
 import { TailSpin } from "react-loader-spinner";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+import MoreJobInfo from "./more_info/MoreJobInfo";
 
 export default function Jobs() {
   const [jobs, setJobs] = useState([]);
   const [hasMore, setHasMore] = useState(true);
   const [filterRes, setfilterRes] = useState(true);
+  const [expanded, setExpanded] = useState(false);
   const [pageNumber, setPageNumber] = useState(1);
+  const [moreInfo, setMoreInfo] = useState("");
+  const [isMoreInfoActive, setIsMoreInfoActive] = useState(false);
 
   const selectedRoles = useSelector((state) => state.role.selectedRoles);
   const selectedNumberOfEmployees = useSelector(
@@ -195,6 +199,27 @@ export default function Jobs() {
   };
   return (
     <>
+      {expanded && (
+        <MoreJobInfo
+          aboutCompany={moreInfo}
+          aboutRole={moreInfo}
+          closeMoreInfo={() => setIsMoreInfoActive(false)}
+          expanded={expanded}
+        />
+      )}
+
+      {expanded && (
+        <div
+          onClick={() => {
+            if (expanded) {
+              console.log("Hellow rold");
+              setExpanded(false);
+            }
+          }}
+          className="gray-div"
+        ></div>
+      )}
+
       {!filterRes && (
         <div
           style={{
@@ -382,9 +407,16 @@ export default function Jobs() {
                     </p>
                     {job.jobDetailsFromCompany.length > 400 && (
                       <div className="view-more-container">
-                        <a href={job.jdLink} className="view-more">
-                          View Job
-                        </a>
+                        <p
+                          onClick={() => {
+                            setExpanded(true);
+                            setMoreInfo(job.jobDetailsFromCompany);
+                            console.log(expanded);
+                          }}
+                          className="view-more"
+                        >
+                          Show More
+                        </p>
                       </div>
                     )}
 
@@ -423,5 +455,3 @@ export default function Jobs() {
     </>
   );
 }
-
-//Company name, work mode
